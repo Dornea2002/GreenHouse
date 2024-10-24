@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GreenHouseApp</string>
+    <string name="get_started_string">Get Started</string>
+    <string name="property_srting">The property of Andrei Dornea</string>
+</resources>
