@@ -2,4 +2,8 @@
     <string name="app_name">GreenHouseApp</string>
     <string name="get_started_string">Get Started</string>
     <string name="property_srting">The property of Andrei Dornea</string>
+    <string name="humidity_text">Humidity</string>
+    <string name="temperature_text">Temperature</string>
+    <string name="light_text">Light</string>
+    <string name="soil_text">Soil</string>
 </resources>

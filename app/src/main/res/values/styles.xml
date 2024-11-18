@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonTextStyle">
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textColor">@color/color_tertiary</item>
+    </style>
+
+    <style name="HomeButtonStyle">
+        <item name="android:backgroundTint">@color/color_secondary</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textColor">@color/color_tertiary</item>
+        <item name="android:width">@dimen/button_medium</item>
+        <item name="iconSize">36dp</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+</resources>
