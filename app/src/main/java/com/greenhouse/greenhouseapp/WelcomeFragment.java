@@ -3,45 +3,44 @@ package com.greenhouse.greenhouseapp;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+
+import com.greenhouse.greenhouseapp.databinding.WelcomeLayoutBinding;
+
+import java.util.Objects;
 
 public class WelcomeFragment extends Fragment {
-    private Button getStartedButton;
-    private TextView textView;
+    private WelcomeLayoutBinding binding;
 
-    public WelcomeFragment() {
-        super(R.layout.welcome_layout);
-    }
-
-    @SuppressLint("ShowToast")
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        binding = WelcomeLayoutBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
-        Log.d("Here", "Here in onViewCreated");
-
-        super.onViewCreated(view, savedInstanceState);
-
-        initiateUI(view);
-        setListeners(view);
-    }
-
-    private void initiateUI(View view){
-        getStartedButton = view.findViewById(R.id.get_started_button);
-        textView = view.findViewById(R.id.property_text);
-    }
-
-    @SuppressLint("SetTextI18n")
-    private void setListeners(View view){
-        Log.d("Here", "In listeners:   " + view.toString());
-        getStartedButton.setOnClickListener(v -> {
-            textView.setText("Ai apasat FRAERE");
+        binding.getStartedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("Here", "Click");
+                binding.getStartedButton.setText("CLICKKKKKKKKKK");
+            }
         });
-    }
 
+        if (binding.getStartedButton == null) {
+            Log.e("WelcomeFragment", "getStartedButton is NULL!");
+        } else {
+            Log.d("WelcomeFragment", "Button found successfully!");
+        }
+
+        return view;
+    }
 }

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/welcome_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_primary"
     tools:context=".MainActivity">
 
-    <ImageView
+<!--    <ImageView
         android:id="@+id/loggo_image"
         android:layout_width="350dp"
         android:layout_height="350dp"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Button
         android:id="@+id/get_started_button"
@@ -28,24 +28,24 @@
         android:width="250dp"
         android:height="60dp"
         android:backgroundTint="@color/color_quaternary"
+        android:clickable="true"
+        android:focusable="true"
         android:text="@string/get_started_string"
         android:textColor="@color/color_tertiary"
-        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loggo_image" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
+<!--    <TextView
         android:id="@+id/property_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="@string/property_srting"
         android:textColor="@color/color_quaternary"
-        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
