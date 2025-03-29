@@ -30,7 +30,13 @@ public class HomeFragment extends Fragment {
         binding = HomeLayoutBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
+        if(view == null){
+            Log.d("mqtt", "View is null");
+        } else Log.d("mqtt", "View is not null");
+
         mockupInitiateUI();
+
+        binding.humidityButton.performClick();
 
         initiateCommunicationConnection();
 
@@ -40,12 +46,9 @@ public class HomeFragment extends Fragment {
     private void mockupInitiateUI(){
         binding.humidityButton.setText("Led");
         binding.humidityButton.setOnClickListener(view -> {
-            Log.d("mqtt", "AM APASAT BUTONUL!!");
-            if(view==null){
-                Log.d("mqtt", "AM APASAT BUTONUL!!");
-            }
-
-            else Log.d("mqtt", "NUUUUUUUUUUUU AM APASAT BUTONUL!!");
+            if(view == null){
+                Log.d("mqtt", "View is null");
+            } else Log.d("mqtt", "I know View is not null");
         });
     }
 

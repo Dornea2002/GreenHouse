@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
+<!--    <ImageView
         android:id="@+id/lettuce_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -16,9 +16,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <com.google.android.material.appbar.MaterialToolbar
+<!--    <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_home"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -27,22 +27,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationContentDescription="Back"
-        app:navigationIcon="@drawable/back_arrow_icon" />
+        app:navigationIcon="@drawable/back_arrow_icon" />-->
+
 
     <Button
         android:id="@+id/humidity_button"
-        style="@style/HomeButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/humidity_text"
-        android:clickable="true"
-        android:textAppearance="@style/ButtonTextStyle"
-        app:icon="@drawable/water_icon"
-        app:layout_constraintBottom_toTopOf="@+id/temperature_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--
     <com.google.android.material.button.MaterialButton
         android:id="@+id/temperature_button"
         style="@style/HomeButtonStyle"
@@ -81,6 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/light_button" />
+-->
 
 
     <TextView
