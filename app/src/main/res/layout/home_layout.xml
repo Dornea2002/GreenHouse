@@ -5,90 +5,48 @@
     android:id="@+id/welcome_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_primary"
     tools:context=".MainActivity">
 
-<!--    <ImageView
-        android:id="@+id/lettuce_image"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lettuce_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <com.google.android.material.appbar.MaterialToolbar
+    <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_home"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/color_primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationContentDescription="Back"
-        app:navigationIcon="@drawable/back_arrow_icon" />-->
-
-
-    <Button
-        android:id="@+id/humidity_button"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/temperature_button"
-        style="@style/HomeButtonStyle"
+    <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/temperature_text"
-        android:textAppearance="@style/ButtonTextStyle"
-        app:icon="@drawable/temperature_icon"
-        app:layout_constraintBottom_toTopOf="@id/light_button"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Welcome"
+        style="@style/WelcomeTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_home"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/humidity_button" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/light_button"
-        style="@style/HomeButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/light_text"
-        android:textAppearance="@style/ButtonTextStyle"
-        app:icon="@drawable/light_bulb_icon"
-        app:layout_constraintBottom_toTopOf="@id/soil_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/temperature_button" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/soil_button"
-        style="@style/HomeButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/soil_text"
-        android:textAppearance="@style/ButtonTextStyle"
-        app:icon="@drawable/flower_soil_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/light_button" />
--->
-
+        app:layout_constraintBottom_toTopOf="@+id/user_text"
+        />
 
     <TextView
-        android:id="@+id/property_text"
+        android:id="@+id/user_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="andrei"
+        style="@style/UserTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/profile_icon"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar_home"
+        app:layout_constraintEnd_toEndOf="@id/toolbar_home"
+        app:layout_constraintTop_toTopOf="@id/toolbar_home" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

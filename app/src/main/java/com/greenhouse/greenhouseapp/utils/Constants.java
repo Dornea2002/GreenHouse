@@ -1,4 +1,4 @@
-package com.greenhouse.greenhouseapp.helpers;
+package com.greenhouse.greenhouseapp.utils;
 
 public class Constants {
     public static final String BROKER_URL = "ssl://kangaroo.rmq.cloudamqp.com:8883";

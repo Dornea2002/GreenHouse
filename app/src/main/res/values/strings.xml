@@ -6,4 +6,9 @@
     <string name="temperature_text">Temperature</string>
     <string name="light_text">Light</string>
     <string name="soil_text">Soil</string>
+    <string name="plant_page_toolbar_string">My plants</string>
+    <string name="plant_family_string">Family</string>
+    <string name="plant_species_string">Species</string>
+    <string name="humidity_label_string">Humidity</string>
+    <string name="temperature_label_string">Temperature</string>
 </resources>

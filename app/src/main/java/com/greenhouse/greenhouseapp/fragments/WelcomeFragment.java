@@ -1,23 +1,17 @@
-package com.greenhouse.greenhouseapp;
+package com.greenhouse.greenhouseapp.fragments;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
+import com.greenhouse.greenhouseapp.MainActivity;
 import com.greenhouse.greenhouseapp.databinding.WelcomeLayoutBinding;
-
-import java.util.Objects;
 
 public class WelcomeFragment extends Fragment {
     private WelcomeLayoutBinding binding;
@@ -30,17 +24,10 @@ public class WelcomeFragment extends Fragment {
         binding.getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("Here", "Click");
-                binding.getStartedButton.setText("CLICKKKKKKKKKK");
+//                ((MainActivity)requireActivity()).navigateToFragment(new HomeFragment());
+                ((MainActivity)requireActivity()).navigateToFragment(new PlantFragment());
             }
         });
-
-        if (binding.getStartedButton == null) {
-            Log.e("WelcomeFragment", "getStartedButton is NULL!");
-        } else {
-            Log.d("WelcomeFragment", "Button found successfully!");
-        }
-
         return view;
     }
 }
